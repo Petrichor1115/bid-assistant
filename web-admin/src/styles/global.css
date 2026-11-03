@@ -1,0 +1,57 @@
+/* 设计令牌与全局样式（B 端企业版，与用户端一致） */
+:root {
+  --primary: #2456d6;
+  --primary-hover: #1b46bd;
+  --primary-bg: #eef3fe;
+  --primary-bg-2: #dfe8fd;
+  --success: #12a150;
+  --warning: #d97706;
+  --danger: #d92d20;
+  --bg-page: #f5f6f8;
+  --bg-card: #ffffff;
+  --bg-sub: #fafbfc;
+  --bg-sunken: #eef0f4;
+  --border: #e3e8ef;
+  --border-light: #eef1f5;
+  --text-1: #16233a;
+  --text-2: #46506b;
+  --text-3: #6b7488;
+  --text-4: #9aa3b2;
+  --radius: 8px;
+  --radius-sm: 6px;
+  --shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+}
+
+* { box-sizing: border-box; }
+html, body, #root { margin: 0; padding: 0; height: 100%; }
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--text-1);
+  background: var(--bg-page);
+  -webkit-font-smoothing: antialiased;
+}
+::selection { background: var(--primary-bg-2); }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #ccd2dc; border-radius: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+.brand-mark {
+  width: 28px; height: 28px; border-radius: 6px;
+  background: var(--primary);
+  display: inline-flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 13px; font-weight: 600; flex: none;
+}
+.ant-card { box-shadow: none; border-color: var(--border); }
+.ant-card-head-title { font-weight: 600; }
+.ant-table-thead > tr > th {
+  font-weight: 500; font-size: 12px; letter-spacing: 0.2px;
+  color: var(--text-3) !important; background: var(--bg-sub) !important;
+}
+.page-head { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 16px; }
+.page-title { font-size: 18px; font-weight: 600; line-height: 1.4; color: var(--text-1); }
+.page-desc { font-size: 13px; color: var(--text-3); margin-top: 2px; }
+.page-head-actions { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+.num { font-variant-numeric: tabular-nums; }

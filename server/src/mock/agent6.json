@@ -1,0 +1,8 @@
+{ "recommendations": [
+  { "source_entry_id": "entry-tesla-001", "source_file_id": "file-tesla-001",
+    "company_name": "Tesla Energy", "match_score": 0.92,
+    "match_features": { "industry_domain": "工商业储能", "project_scale": "50MWh",
+      "technical_params": ["LFP", "cycle_life≥6000", "inverter_efficiency≥97.5%"],
+      "project_type": "commercial" },
+    "recommendation_reason": "同属工商业储能、容量规模一致，技术参数高度重合，适合作为对标对象" }
+] }

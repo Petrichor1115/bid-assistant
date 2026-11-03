@@ -1,0 +1,11 @@
+{ "requirements": [
+  { "category": "技术参数", "item": "电池类型必须为 LFP", "is_mandatory": true, "source_page": null },
+  { "category": "技术参数", "item": "系统容量 ≥ 50MWh", "is_mandatory": true, "source_page": null },
+  { "category": "技术参数", "item": "循环寿命 ≥ 6000 次（80% DoD）", "is_mandatory": true, "source_page": null },
+  { "category": "技术参数", "item": "逆变器效率 ≥ 97.5%", "is_mandatory": true, "source_page": null },
+  { "category": "资质认证", "item": "IEC 62619 电池安全认证", "is_mandatory": true, "source_page": null },
+  { "category": "资质认证", "item": "CE 认证", "is_mandatory": true, "source_page": null },
+  { "category": "资质认证", "item": "VDE-AR-N 4105 并网标准", "is_mandatory": true, "source_page": null },
+  { "category": "商务条款", "item": "质保期 ≥ 10 年", "is_mandatory": true, "source_page": null },
+  { "category": "商务条款", "item": "投标截止日期 2026-12-15", "is_mandatory": true, "source_page": null }
+] }

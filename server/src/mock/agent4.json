@@ -1,0 +1,11 @@
+{ "coverage": [
+  { "req_item": "电池类型必须为 LFP", "category": "技术参数", "our_status": "covered", "evidence": "我方标书 battery_type=LFP" },
+  { "req_item": "系统容量 ≥ 50MWh", "category": "技术参数", "our_status": "covered", "evidence": "rated_capacity_kwh=50000" },
+  { "req_item": "循环寿命 ≥ 6000 次（80% DoD）", "category": "技术参数", "our_status": "not_met", "evidence": "我方 cycle_life=5500" },
+  { "req_item": "逆变器效率 ≥ 97.5%", "category": "技术参数", "our_status": "not_met", "evidence": "我方 inverter_efficiency=97.0" },
+  { "req_item": "IEC 62619 电池安全认证", "category": "资质认证", "our_status": "covered", "evidence": "certifications 含 IEC 62619" },
+  { "req_item": "CE 认证", "category": "资质认证", "our_status": "covered", "evidence": "certifications 含 CE" },
+  { "req_item": "VDE-AR-N 4105 并网标准", "category": "资质认证", "our_status": "missing", "evidence": "certifications 无 VDE-AR-N 4105" },
+  { "req_item": "质保期 ≥ 10 年", "category": "商务条款", "our_status": "covered", "evidence": "warranty_years=10" },
+  { "req_item": "投标截止日期 2026-12-15", "category": "商务条款", "our_status": "covered", "evidence": "项目截止日期 2026-12-15" }
+] }

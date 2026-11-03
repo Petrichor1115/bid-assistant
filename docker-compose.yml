@@ -1,0 +1,56 @@
+services:
+  mysql:
+    image: mysql:8.0
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root123456
+      MYSQL_DATABASE: bid_demo
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  server:
+    build: ./server
+    depends_on:
+      mysql:
+        condition: service_healthy
+    ports:
+      - "3001:3001"
+    environment:
+      PORT: 3001
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_USER: root
+      DB_PASSWORD: root123456
+      DB_NAME: bid_demo
+      STORAGE_DIR: /app/storage/uploads
+      STORAGE_DRIVER: local
+      LLM_MOCK: "true"
+      JWT_SECRET: docker-dev-secret
+    volumes:
+      - uploads-data:/app/storage
+    command: sh -c "node scripts/migrate.js && node seed.js && node src/index.js"
+
+  web-user:
+    build: ./web-user
+    depends_on:
+      - server
+    ports:
+      - "8080:80"
+
+  web-admin:
+    build: ./web-admin
+    depends_on:
+      - server
+    ports:
+      - "8081:80"
+
+volumes:
+  mysql-data:
+  uploads-data:

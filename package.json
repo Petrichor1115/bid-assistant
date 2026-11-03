@@ -1,0 +1,13 @@
+{
+  "name": "bid-demo",
+  "private": true,
+  "scripts": {
+    "dev:server": "npm --prefix server run dev",
+    "dev:web-user": "npm --prefix web-user run dev",
+    "dev:web-admin": "npm --prefix web-admin run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:web-user\" \"npm run dev:web-admin\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}

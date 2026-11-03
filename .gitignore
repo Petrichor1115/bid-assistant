@@ -1,0 +1,49 @@
+# 依赖
+node_modules/
+.npm/
+.pnpm-store/
+
+# 构建产物
+dist/
+build/
+out/
+*.tsbuildinfo
+.vite/
+.cache/
+
+# 环境与本地配置（只保留示例文件）
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# 运行时数据与上传文件
+storage/
+server/storage/
+server/data/
+uploads/
+*.sqlite
+*.db
+
+# 日志与临时文件
+*.log
+logs/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+tmp/
+temp/
+
+# 架构图生成过程产物（仅保留 .html 成果）
+*.browser-check.json
+*.delivery.json
+*.finalize.json
+*.finalize-summary.json
+
+# 编辑器与操作系统
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+*.swp
+*.swo

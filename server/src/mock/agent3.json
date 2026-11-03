@@ -1,0 +1,8 @@
+{ "issues": [
+  { "type": "abnormal", "field": "cycle_life", "current_value": 5500, "severity": "yellow",
+    "suggestion": "循环寿命 5500 次，低于行业主流 6000+，建议补充高循环版本数据" },
+  { "type": "missing", "field": "vde_certification", "current_value": null, "severity": "red",
+    "suggestion": "缺少 VDE-AR-N 4105 并网认证，德国市场强制要求，必须补充" },
+  { "type": "abnormal", "field": "inverter_efficiency", "current_value": 97.0, "severity": "yellow",
+    "suggestion": "逆变器效率 97.0%，略低于招标要求 97.5%，建议更新为最新方案" }
+] }

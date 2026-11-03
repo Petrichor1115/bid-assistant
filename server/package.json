@@ -1,0 +1,31 @@
+{
+  "name": "bid-demo-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "dev": "node src/index.js",
+    "start": "node src/index.js",
+    "db:migrate": "node scripts/migrate.js",
+    "db:provision": "node scripts/provision-db.js",
+    "cloud:sync": "node scripts/cloud-sync.js",
+    "cloud:restore": "node scripts/cloud-restore.js",
+    "seed": "node seed.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.600.0",
+    "ali-oss": "^6.20.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mammoth": "^1.13.0",
+    "minio": "^8.0.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.11.0",
+    "pdf-parse": "^1.1.1",
+    "pdfjs-dist": "^2.16.105",
+    "pdfkit": "^0.15.0"
+  }
+}

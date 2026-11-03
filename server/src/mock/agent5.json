@@ -1,0 +1,12 @@
+{ "gaps": [
+  { "field": "cycle_life", "our_value": "5500 次", "opponent_value": "7000 次", "severity": "red",
+    "gap_description": "循环寿命低于对手 1500 次", "suggestion": "改用高循环 LFP 电芯，目标 ≥ 6500 次" },
+  { "field": "inverter_efficiency", "our_value": "97.0%", "opponent_value": "98.0%", "severity": "yellow",
+    "gap_description": "逆变器效率低 1 个百分点", "suggestion": "采用更高效率逆变器方案" },
+  { "field": "system_efficiency", "our_value": "89.5%", "opponent_value": "92.0%", "severity": "yellow",
+    "gap_description": "系统综合效率低 2.5 个百分点", "suggestion": "优化 BMS 均衡策略和热管理" },
+  { "field": "total_price_eur", "our_value": "€14,500,000", "opponent_value": "€13,800,000", "severity": "red",
+    "gap_description": "总报价高于对手 €700,000（约 5%）", "suggestion": "评估成本结构，批量采购降本或调利润率" },
+  { "field": "vde_certification", "our_value": "无", "opponent_value": "已认证", "severity": "red",
+    "gap_description": "缺少德国并网强制认证，直接废标风险", "suggestion": "立即启动 VDE-AR-N 4105 认证申请" }
+] }

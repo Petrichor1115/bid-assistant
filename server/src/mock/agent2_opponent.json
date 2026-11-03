@@ -1,0 +1,9 @@
+{ "company_name": "Tesla Energy",
+  "technical_params": {
+    "battery_type": "LFP", "rated_capacity_kwh": 50000, "rated_power_kw": 25000,
+    "storage_duration_h": 2, "cycle_life": 7000, "inverter_efficiency": 98.0,
+    "system_efficiency": 92.0, "energy_density_whl": 280, "dod": 95,
+    "warranty_years": 10, "certifications": ["IEC 62619", "UN38.3", "CE", "VDE-AR-N 4105"],
+    "ems_integrated": true, "bms_type": "主动均衡", "install_type": "工商业", "grid_mode": "并网"
+  },
+  "pricing": { "total_price_eur": 13800000, "price_per_wh_eur": 0.276 } }
