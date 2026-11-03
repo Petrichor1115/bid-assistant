@@ -17,11 +17,10 @@ out/
 .env.*.local
 !.env.example
 
-# 运行时数据与上传文件
-storage/
-server/storage/
-server/data/
-uploads/
+# 运行时数据与上传文件（锚定根目录，避免误伤 src/services/storage 等代码目录）
+/storage/
+/server/storage/
+/server/data/
 *.sqlite
 *.db
 
